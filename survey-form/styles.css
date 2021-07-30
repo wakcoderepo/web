@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+}
+
+/* form box */
+.form-style {
+	position: relative;
+	max-width: 550px;
+	padding: 10px 20px;
+	background: #f4f7f85b;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+  border: none;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: white;
+}
+
+.heading {
+	position: relative;
+	color: white;
+	padding-top: 40px;
+}
+
+.form-style label {
+  display: inline-block;
+	margin-bottom: 8px;
+}
+
+
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style textarea,
+.form-style select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+/* buat button */
+#submit {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font: normal 22px/normal Impact, Charcoal, sans-serif;
+  color: rgba(29,31,104,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 5px;
+  word-spacing: 2px;
+  background: rgba(35,110,209,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(24,76,145,1) inset, -2px -2px 2px 0 rgba(97,157,237,1) inset;
+  box-shadow: 2px 2px 2px 0 rgba(24,76,145,1) inset, -2px -2px 2px 0 rgba(97,157,237,1) inset;
+  text-shadow: -1px -1px 0 rgba(255,255,255,0.2) ;
+}
+
+#submit:hover {
+  color: rgba(255,216,0,1);
+  text-shadow: -2px -2px 9px rgba(255,255,86,0.7) , 2px 2px 9px rgba(255,255,86,0.54) , -1px -1px 0 rgba(255,255,255,0.2) ;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; 
+}
+
